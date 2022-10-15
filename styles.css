@@ -10,6 +10,7 @@ body {
 }
 
 .container {
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
@@ -232,6 +233,7 @@ button {
     grid-column: 1 / -1;
     background-color: aliceblue;
     justify-content: center;
+    align-content: center;
 }
 
 input {
