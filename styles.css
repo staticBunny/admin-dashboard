@@ -3,6 +3,7 @@
     margin: 0;
 }
 
+/* Layout */
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -49,4 +50,21 @@
 .logo-text {
     display: grid;
     grid-template-columns: 1fr 3fr;
+}
+
+/* Resize logos */
+.trending > .card :first-child, 
+.hero > .top > .right :nth-child(2) {
+    width: 35px;
+    height: auto;
+}
+
+.hero > .bottom > .left :first-child {
+    width: 50px;
+    height: auto;
+}
+
+.projects > .card > .logos > img {
+    width: 20px;
+    height: auto;
 }
