@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.main,
+.hero {
+    grid-column: 2 / 3;
+}
+
+.sidebar {
+    display: grid;
+    grid-template-rows: 1fr 5fr 6fr;
+}
+
+.hero .bottom, 
+.hero .top {
+    display: grid;
+}
+
+.hero .top {
+    grid-template-columns: 3fr 2fr;
+}
+
+.hero .bottom {
+    grid-template-columns: 1fr 1fr;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.trending,
+.announcements {
+    grid-column: 2 / 3;
+}
