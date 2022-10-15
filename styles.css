@@ -195,6 +195,8 @@ body {
 }
 
 button {
+    font-family: inherit;
+    font-weight: bold;
     background-color: skyblue;
     border-radius: 10px;
     width: 100px;
@@ -219,4 +221,23 @@ button {
 .trending > .text,
 .projects > .heading {
     font-size: x-large;
+}
+
+.sidebar .text {
+    font-size: larger;
+}
+
+.credits {
+    display: grid;
+    grid-column: 1 / -1;
+    background-color: aliceblue;
+    justify-content: center;
+}
+
+input {
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 10px;
+    background-color: lightgray;
 }
