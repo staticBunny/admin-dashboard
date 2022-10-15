@@ -6,6 +6,7 @@
 
 body {
     background-color: lightgray;
+    font-family: "Courier New", "Monaco", sans-serif;
 }
 
 .container {
@@ -36,7 +37,7 @@ body {
 .sidebar {
     grid-row: 1 / 3;
     display: grid;
-    grid-template-rows: 1fr 5fr 6fr;
+    grid-template-rows: 1fr 3fr 6fr;
     background-color: skyblue;
     padding: 10px;
 }
@@ -106,7 +107,7 @@ body {
     grid-row: 1 / 3;
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .projects > .heading {
@@ -118,7 +119,7 @@ body {
     grid-template-rows: 1fr 4fr 1fr;
     padding: 10px;
     background-color: yellow;
-    border-radius: 8%;
+    border-radius: 10px;
     box-shadow: 0 8px 6px -6px black;
 }                    
 
@@ -133,7 +134,7 @@ body {
     background-color: white;
     padding: 15px;
     margin-top: 10px;
-    border-radius: 8%;
+    border-radius: 10px;
     margin: 10px;
     box-shadow: 0 8px 6px -6px black;
 }
@@ -199,4 +200,23 @@ button {
     width: 100px;
     padding: 5px 0;
     border: none;
+}
+
+.hero .bottom .left :last-child,
+.announcements > .text,
+.trending > .text,
+.heading {
+    font-weight: bolder;
+    font-size: larger;
+    margin-bottom: 15px;
+}
+
+.hero .top .right :last-child {
+    font-weight: bold;
+}
+
+.announcements > .text,
+.trending > .text,
+.projects > .heading {
+    font-size: x-large;
 }
